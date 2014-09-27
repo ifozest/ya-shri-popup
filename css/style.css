@@ -1,0 +1,36 @@
+p {
+  margin: 0 0 10px;
+}
+
+.popup {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.popup-backside {
+  z-index: 1000;
+  background-color: #000000;
+  opacity: 0.5;
+}
+
+.popup-main {
+  z-index: 1100;
+  background-color: #ffffff;
+  width: 480px;
+  height: 270px;
+  margin: auto;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.popup-main-img {
+  vertical-align: bottom;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
