@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>a little bit more context</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+        <div class="popup popup-main overflow-hidden" id="popup">
+            <p>Arctic was the largest and most celebrated of the four Collins steamers that had
+                operated a regular transatlantic passenger and mail carrying service since 1850. After the collision
+                Arctic's captain, James Luce, first attempted to assist the stricken Vesta, which he believed was in
+                imminent danger of sinking. When he discovered that his own ship had been seriously holed below the
+                waterline, he decided to run her towards the nearest land, in the hopes of reaching safety. His plan
+                failed; the engines stopped when the ship was still far from land. Arctic's lifeboat capacity was less
+                than half of those on board; when Luce ordered these launched, a breakdown in order and discipline meant
+                that most places in the boats were taken by members of the crew or the more able-bodied male passengers.
+                The rest struggled to build makeshift rafts, but most were unable to leave the ship, and went down with
+                it when it sank, four hours after the collision. Vesta, which initially appeared to have sustained
+                mortal damage, was kept afloat by her watertight
+                <a href="#" class="popup-content-collapse" id="collapse">...(click here to read more)</a>
+                bulkheads,and managed to limp into harbor at St. John's, Newfoundland.
+
+                Two of the six lifeboats that left Arctic reached the Newfoundland shore safely, and another was picked
+                up by a passing steamer, which also rescued a few survivors from improvised rafts. Among these was
+                Captain Luce, who had regained the surface after initially going down with the ship. The other three
+                lifeboats disappeared without a trace. The rudimentary telegraph facilities of the time meant that news
+                of Arctic's loss did not reach New York until two weeks after the sinking. Initial public sorrow at the
+                ship's loss quickly turned to anger at the perceived cowardice of the crew. Despite press calls for a
+                full investigation into the disaster, none was held, and nobody was held legally responsible for his
+                actions. Demands for the introduction of further safety measures on passenger-carrying vessels were
+                likewise sidestepped. Luce, who was generally exonerated from blame by the public, retired from the sea;
+                some of the surviving crew chose not to return to the US. The Collins Line continued its transatlantic
+                service, until further maritime losses and insolvency led to its closure in 1858.</p>
+        </div>
+        <div class="popup popup-backside"></div>
+        <script>
+            (function() {
+                var link = document.getElementById('collapse');
+                link.addEventListener('click', function(e) {
+                    var popup = document.getElementById('popup');
+                    e.preventDefault();
+                    e.target.style.display = 'none';
+                    popup.style.height = '560px';
+                });
+            })();
+        </script>
+    </body>
+</html>
